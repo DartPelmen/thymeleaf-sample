@@ -1,0 +1,8 @@
+<div class="filmList" th:fragment="filmcontainer">
+    <th:block th:each="film: ${filmList}">
+        <div class="card">
+            <h3 th:text="${film.title}"></h3>
+            <p th:text="${film.annotation}"></p>
+        </div>
+    </th:block>
+</div>
